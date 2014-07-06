@@ -1,16 +1,16 @@
 /**
  * Created by matheus on 06/07/14.
  */
-    public class Carro extends Thread{
+    public class EstacionaThread extends Thread{
     private Estacionamento estacionamento;
     private int espera;
     private int vaga;
 
-    public Carro(Estacionamento e) {
+    public EstacionaThread(Estacionamento e) {
         super();
         this.estacionamento = e;
     }
-    public Carro(Estacionamento e, String nome) {
+    public EstacionaThread(Estacionamento e, String nome) {
         super(nome);
         this.estacionamento = e;
     }

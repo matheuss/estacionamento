@@ -13,11 +13,11 @@ public class Main {
         EstacionaThread[] carros = new EstacionaThread[nCarros];
 
         for(int i = 0; i < nCarros; i ++) {
-            System.out.print(random.nextInt(4) + " ");
+            System.out.print((random.nextInt(4) + 1) + " ");
         }
 
         for(int i = 0; i < nCarros; i ++) {
-            carros[i] = new EstacionaThread(estacionamento, Integer.toString(i + 1), random.nextInt(4));
+            carros[i] = new EstacionaThread(estacionamento, Integer.toString(i + 1), random.nextInt(4) + 1);
             carros[i].start();
         }
     }

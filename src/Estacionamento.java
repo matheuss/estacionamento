@@ -40,10 +40,5 @@ public class Estacionamento extends Thread{
     public synchronized void sair(int vaga) {
         vagas[vaga] = true;
         notifyAll();
-
-
     }
-
-
-
 }
